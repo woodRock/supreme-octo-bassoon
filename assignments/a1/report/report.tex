@@ -1,0 +1,80 @@
+% Determines aspects of the layout
+
+\documentclass[12pt]{article}
+
+% Include images in the document
+\usepackage{graphicx}
+
+% Link to an assets directory
+\graphicspath{ {assets/images/} }
+
+% Position figures at their page position using [H]
+\usepackage{float}
+
+% Hides the text decoration on website urls
+\usepackage[hidelinks]{hyperref}
+
+% Allows the user to input accented characters directly from the keyboard;
+\usepackage[utf8]{inputenc}
+
+\usepackage{listings}
+
+% Allows for custom bibliography styles
+\usepackage[
+  backend=biber,
+  style=verbose-trad2,
+  citestyle=authoryear
+]{biblatex}
+
+% Filename of the bibliography
+\bibliography{references}
+
+% Use the title, author and date variables
+\usepackage{titling}
+
+% Allows figures to be wrapped within the text
+\usepackage{wrapfig}
+
+\title{
+  \Huge \textbf{Assignment 1} \\
+  \vspace{0.5cm}
+  \LARGE Unreal
+}
+\author{
+  \textbf{Jesse Wood} \\
+  300312194
+}
+
+\begin{document}
+
+\begin{titlepage}
+ \begin{center}
+  \vspace*{1cm}
+
+  \thetitle
+
+  \vspace{0.8cm}
+
+  \theauthor
+
+  \vspace{1.0cm}
+
+  \includegraphics[width=0.4\textwidth]{template}
+
+  \vfill
+
+  \Large
+  Learning to develop in a game engine
+
+  \vspace{1.0cm}
+
+  \Large
+  COMP 309 \\
+  Computer Game Development \\
+  Engineering \& Computer Science \\
+  \today
+
+ \end{center}
+\end{titlepage}
+
+\end{document}
